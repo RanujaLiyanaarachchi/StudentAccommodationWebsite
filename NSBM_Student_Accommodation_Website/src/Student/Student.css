@@ -1,0 +1,127 @@
+/* Home.css */
+
+/* Logo styling */
+.logo {
+  margin-right: auto; /* Pushes the logo to the left corner */
+  padding: 0 20px; /* Add padding for spacing */
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 0 0.1%;
+}
+
+/* Navbar link styling */
+nav a {
+  color: blue;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+/* Navbar link hover effect */
+nav a:hover {
+  color: green;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: center;
+  background-color:#f2f2f2; /* Change to match navbar background color */
+  min-width: 110px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  left: 50%; /* Adjusted to center the dropdown */
+  transform: translateX(-50%); /* Adjusted to center the dropdown */
+}
+
+/* Dropdown link */
+.dropdown-content a {
+  color: blue;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown link hover effect */
+.dropdown-content a:hover {
+  background-color: #fffdfd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Home icon styling */
+.home-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Adjust space between menu items */
+nav {
+  justify-content: flex-end; /* Align menu items to the right */
+}
+
+/* Footer styling */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+/* HomeLayout.css */
+
+/* Main layout container */
+
+/* Content styling */
+.content {
+  flex-grow: 1; /* Allow content to grow to fill remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Footer styling */
+.footer {
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  text-align: center;
+  z-index: 2;
+}
+
+
+
+.home-layout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is behind other content */
+}

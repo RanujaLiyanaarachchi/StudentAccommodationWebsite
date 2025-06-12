@@ -1,0 +1,161 @@
+/* Login.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form-container {
+    background-color:transparent;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: transparent;
+    width: 800px; /* Adjust form width */
+    
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 100px;
+    color: #ffffffce;
+    font-size: 40px; /* Increase title font size */
+}
+
+.login-form {
+    width: 100%;
+    height: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px; /* Increase label font size */
+}
+/* Login.css */
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 20px; /* Rounded corners */
+    outline: none;
+    font-size: 16px; /* Increase input font size */
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.6); /* Set background color */
+}
+
+.form-input::placeholder {
+    color: #363434;
+}
+
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    color: #ffffffa2;
+    text-decoration: none;
+    font-size: 14px; /* Adjust font size */
+    text-align: right;
+    padding-right: 12px;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.login-btn,
+.clear-btn {
+    margin-top: 20px;
+    width: 45%; /* Set width */
+    padding: 12px 0;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 20px; /* Increase button font size */
+}
+
+.login-btn {
+    background-color: #007bffbf;
+    color: #ffffff;
+    margin-right: 20px; /* Gap between buttons */
+}
+
+.clear-btn {
+    background-color: #f0f0f0c2;
+    color: #333333;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+    font-size: 12px;
+}
+
+/* Login.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+    background-image: url('Background.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: bottom; /* Set background position to the bottom */
+
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height for full viewport height */
+}
+
+.login-form-container {
+    background-color: transparent; /* Add opacity to make the form container semi-transparent */
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: transparent;
+    width: 100%; /* Adjust form width */
+    max-width: 800px; /* Set maximum width */
+}
+
+/* Rest of your existing CSS styles remain the same */
+
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-form-container {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: transparent;
+    width: 90%;
+    max-width: 800px;
+}
